@@ -1,7 +1,6 @@
 #!/usr/bin/env php
 <?php
 
-<<<<<<< HEAD
 define('LARAVEL_START', microtime(true));
 
 /*
@@ -20,24 +19,6 @@ require __DIR__.'/vendor/autoload.php';
 
 $app = require_once __DIR__.'/bootstrap/app.php';
 
-=======
-use Symfony\Component\Console\Input\ArgvInput;
-use Symfony\Component\Console\Output\ConsoleOutput;
-
-/*
-|--------------------------------------------------------------------------
-| Create The Application
-|--------------------------------------------------------------------------
-|
-| First we need to get an application instance. This creates an instance
-| of the application / container and bootstraps the application so it
-| is ready to receive HTTP / Console requests from the environment.
-|
-*/
-
-$app = require __DIR__.'/bootstrap/app.php';
-
->>>>>>> 7d1b6d8454c92a518cc2b24a08c9408be49cea16
 /*
 |--------------------------------------------------------------------------
 | Run The Artisan Application
@@ -48,7 +29,6 @@ $app = require __DIR__.'/bootstrap/app.php';
 | or another output device for the developers. Here goes nothing!
 |
 */
-<<<<<<< HEAD
 
 $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class);
 
@@ -69,11 +49,5 @@ $status = $kernel->handle(
 */
 
 $kernel->terminate($input, $status);
-=======
->>>>>>> 7d1b6d8454c92a518cc2b24a08c9408be49cea16
 
-$kernel = $app->make(
-    'Illuminate\Contracts\Console\Kernel'
-);
-
-exit($kernel->handle(new ArgvInput, new ConsoleOutput));
+exit($status);

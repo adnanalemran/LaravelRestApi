@@ -1,9 +1,7 @@
 <?php
 
-// $router->get('/{name}', 'MyController@My');
-$router->get('/', 'MyController@User');
+use Illuminate\Support\Facades\Route;
 
-<<<<<<< HEAD
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,8 +16,3 @@ $router->get('/', 'MyController@User');
 Route::get('/', function () {
     return view('welcome');
 });
-=======
-$router->get('/First', 'RedirectController@First');
-$router->get('/Second', 'RedirectController@Second');
-$router->get('/download', 'RedirectController@download');
->>>>>>> 7d1b6d8454c92a518cc2b24a08c9408be49cea16
