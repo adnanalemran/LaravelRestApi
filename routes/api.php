@@ -10,3 +10,7 @@ Route::get('/user', function (Request $request) {
 Route::get('/', function () {
     return ('Welcome to api route');
 });
+
+Route::get('about', function () {
+    return ('About page');
+})->name("about");
